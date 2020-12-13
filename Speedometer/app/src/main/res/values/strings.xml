@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Speedometer</string>
+    <string name="longitude">Longitude</string>
+    <string name="latitude">Latitude</string>
+    <string name="speed">Speed</string>
+    <string name="more">More</string>
+    <string name="km_h"> km/h</string>
+    <string name="timestamp">Timestamp</string>
+    <string name="metric_km_h">km/h</string>
+    <string name="map">Map</string>
+    <string name="start">Start</string>
+    <string name="violations">Violations</string>
+    <string name="limit">Limit</string>
+    <string name="textview_test">TextView</string>
+    <string name="nonStart_Text">--</string>
+    <string name="filters">Filters</string>
+    <string name="all">All</string>
+    <string name="last_week">Last week</string>
+    <string name="choose_the_range">Choose the range</string>
+    <string name="from">From</string>
+    <string name="datefrom">--</string>
+    <string name="to">To</string>
+    <string name="dateto">--</string>
+    <string name="reset">Reset</string>
+    <string name="search">Search</string>
+    <string name="a">--</string>
+    <string name="info">info</string>
+</resources>

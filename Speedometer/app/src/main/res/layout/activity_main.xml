@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/mic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="32dp"
+        android:background="#14C5DC"
+        android:backgroundTint="#14C5DC"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/map_button"
+        app:srcCompat="@drawable/ic_mic_black_24dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/speedtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/nonStart_Text"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/metric"
+        app:layout_constraintEnd_toEndOf="@+id/metric"
+        app:layout_constraintStart_toStartOf="@+id/metric"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/metric"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginBottom="23dp"
+        android:text="@string/metric_km_h"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/startButton"
+        app:layout_constraintStart_toStartOf="@+id/startButton"
+        app:layout_constraintTop_toBottomOf="@+id/speedtxt"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/map_button"
+        android:layout_width="140dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="135dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginBottom="17dp"
+        android:backgroundTint="#14C5DC"
+        android:foregroundTint="#1AFFFEFE"
+        android:text="@string/map"
+        app:layout_constraintBottom_toTopOf="@+id/limitTextView"
+        app:layout_constraintEnd_toStartOf="@+id/mic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/violations_button"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="140dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="#14C5DC"
+        android:foregroundTint="#1AFFFEFE"
+        android:text="@string/start"
+        app:layout_constraintBottom_toTopOf="@+id/setlimitButton"
+        app:layout_constraintEnd_toEndOf="@+id/setlimitButton"
+        app:layout_constraintStart_toStartOf="@+id/setlimitButton"
+        app:layout_constraintTop_toBottomOf="@+id/metric"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/violations_button"
+        android:layout_width="140dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="#14C5DC"
+        android:foregroundTint="#1AFFFEFE"
+        android:text="@string/violations"
+        app:layout_constraintBottom_toTopOf="@+id/map_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setlimitButton"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/setlimitButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="13dp"
+        android:backgroundTint="#14C5DC"
+        android:foregroundTint="#1AFFFEFE"
+        android:text="@string/limit"
+        app:layout_constraintBottom_toTopOf="@+id/violations_button"
+        app:layout_constraintEnd_toEndOf="@+id/violations_button"
+        app:layout_constraintStart_toStartOf="@+id/violations_button"
+        app:layout_constraintTop_toBottomOf="@+id/startButton"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/limitTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="@string/textview_test"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/map_button"
+        app:layout_constraintStart_toStartOf="@+id/map_button"
+        app:layout_constraintTop_toBottomOf="@+id/map_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViolationInfo"
+    android:parentActivityName="com.sit.fth.activity.Violations">
+
+    <fragment
+        android:id="@+id/map"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="34dp"
+        app:layout_constraintBottom_toTopOf="@+id/violation_info_timestamp_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/violation_info_timestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="0"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/violation_info_longitude_label"
+        app:layout_constraintStart_toStartOf="@+id/violation_info_timestamp_label"
+        app:layout_constraintTop_toBottomOf="@+id/violation_info_timestamp_label" />
+
+    <TextView
+        android:id="@+id/violation_info_timestamp_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="3dp"
+        android:text="@string/timestamp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/violation_info_timestamp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/map" />
+
+    <TextView
+        android:id="@+id/violation_info_longitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textSize="16sp"
+        android:text="0"
+        app:layout_constraintStart_toStartOf="@+id/violation_info_longitude_label"
+        app:layout_constraintTop_toBottomOf="@+id/violation_info_longitude_label" />
+
+    <TextView
+        android:id="@+id/violation_info_longitude_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="38dp"
+        android:text="@string/longitude"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/violation_info_latitude_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/violation_info_timestamp" />
+
+    <TextView
+        android:id="@+id/violation_info_latitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="0"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/violation_info_latitude_label"
+        app:layout_constraintTop_toBottomOf="@+id/violation_info_latitude_label" />
+
+    <TextView
+        android:id="@+id/violation_info_latitude_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="38dp"
+        android:text="@string/latitude"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/violation_info_speed_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/violation_info_longitude_label" />
+
+    <TextView
+        android:id="@+id/violation_info_speed_red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="0"
+        android:textColor="#EE0A0A"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/violation_info_speed_label"
+        app:layout_constraintTop_toBottomOf="@+id/violation_info_speed_label" />
+
+    <TextView
+        android:id="@+id/violation_info_speed_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginBottom="193dp"
+        android:text="@string/speed"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/violation_info_latitude_label" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
