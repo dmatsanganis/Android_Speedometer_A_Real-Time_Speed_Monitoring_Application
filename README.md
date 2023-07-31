@@ -1,6 +1,6 @@
-# Android_Speedometer: A Real-Time Speed Monitoring Application
+# Android Speedometer: A Real-Time Speed Monitoring Application
 
-Android_Speedometer is a robust application designed to accurately track and display real-time speed on Android devices. Built using the Android development framework, the application harnesses the power of GPS technology to provide speed measurements.
+Android Speedometer is a robust application designed to accurately track and display real-time speed on Android devices. Built using the Android development framework, the application harnesses the power of GPS technology to provide speed measurements.
 
 ## Features
 
