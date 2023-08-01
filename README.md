@@ -22,3 +22,11 @@ Contributions are what make the open-source community such an amazing place to l
 3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
+
+## Contributors
+
+- [x] [Dimitris Matsanganis](https://github.com/dmatsanganis)
+
+![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)
+![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase)
+![Android](https://img.shields.io/badge/android-%3DDC84.svg?style=for-the-badge&logo=android&logoColor=white)
